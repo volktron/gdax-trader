@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            font-family: 'Ubuntu', 'Arial';
+        }
+        .ticker {
+            border: 1px solid #AAAAAA;
+            padding: 0.5em;
+            margin: 0.5em;
+        }
+        .bid {
+            color: green;
+        }
+        .ask {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="btc-price" class="ticker">
+        <div>Bitcoin (BTC)</div>
+        <div>
+            A: <span class="ask"></span><br/>
+            B: <span class="bid"></span>
+        </div>
+    </div>
+    <div id="bch-price" class="ticker">
+        <div>Bitcoin Cash</div>
+        <div>
+            A: <span class="ask"></span> (<span class="btc"></span> BTC)<br/>
+            B: <span class="bid"></span>
+        </div>
+    </div>
+    <div id="eth-price" class="ticker">
+        <div>Ethereum</div>
+        <div>
+            A: <span class="ask"></span> (<span class="btc"></span> BTC)<br/>
+            B: <span class="bid"></span>
+        </div>
+    </div>
+</body>
+<script src="js/bundle.js"></script>
+</html>
